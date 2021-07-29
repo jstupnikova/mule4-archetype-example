@@ -1,0 +1,9 @@
+#API Configurations
+api:
+ http:
+  listener:
+   path: "/*"
+   console: "${apiBasepath}/console"
+   host: "0.0.0.0"
+   port: "${apiPort}"
+   basepath: "${apiBasepath}"

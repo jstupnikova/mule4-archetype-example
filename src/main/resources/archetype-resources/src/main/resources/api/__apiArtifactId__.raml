@@ -1,0 +1,21 @@
+#%RAML 1.0
+title: ${apiName}
+version: 1
+
+baseUri: http://${apiHost}${apiBasepath}/${appName}
+description: ${apiName}
+
+protocols:
+  - HTTP
+
+/health:
+  get:
+    displayName: Health Check
+    description: The healthcheck endpoint provides information about the health of API.
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              Status: "OK"
+                  
